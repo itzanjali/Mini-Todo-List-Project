@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./todo.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="main-heading" class="text-center">Todo List App</h1>
+        <!-- Add Task Form -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group mb-4">
+                    <input id="todo-input" type="text" class="form-control" placeholder="Enter Todo here">
+                    <input id="todo-date" type="date" class="form-control">
+                    <div class="input-group-append">
+                        <button class="btn-add" onclick="addTask();">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Todo List Container -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="todo-container grid-container"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./todo.js"></script>
+</body>
+
+</html>
